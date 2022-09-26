@@ -46,7 +46,7 @@ variable "dns_zone_id" {
   description = "Route53 DNS Zone ID to add hostname records for Elasticsearch domain and Kibana"
 }
 
-variable "elasticsearch_version" {
+variable "engine_version" {
   type        = string
   default     = "7.4"
   description = "Version of Elasticsearch to deploy (_e.g._ `7.4`, `7.1`, `6.8`, `6.7`, `6.5`, `6.4`, `6.3`, `6.2`, `6.0`, `5.6`, `5.5`, `5.3`, `5.1`, `2.3`, `1.5`"
@@ -259,7 +259,7 @@ variable "kibana_subdomain_name" {
 variable "create_iam_service_linked_role" {
   type        = bool
   default     = true
-  description = "Whether to create `AWSServiceRoleForAmazonElasticsearchService` service-linked role. Set it to `false` if you already have an ElasticSearch cluster created in the AWS account and AWSServiceRoleForAmazonElasticsearchService already exists. See https://github.com/terraform-providers/terraform-provider-aws/issues/5218 for more info"
+  description = "Whether to create `AWSServiceRoleForAmazonOpenSearchService` service-linked role. Set it to `false` if you already have an ElasticSearch cluster created in the AWS account and AWSServiceRoleForAmazonOpenSearchService already exists. See https://github.com/terraform-providers/terraform-provider-aws/issues/5218 for more info"
 }
 
 variable "node_to_node_encryption_enabled" {

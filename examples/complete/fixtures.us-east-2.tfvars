@@ -12,7 +12,7 @@ availability_zones = ["us-east-2a", "us-east-2b"]
 
 instance_type = "t3.small.elasticsearch"
 
-elasticsearch_version = "7.7"
+engine_version = "7.7"
 
 instance_count = 2
 
